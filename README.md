@@ -9,7 +9,7 @@ https://www.udemy.com/course/complete-godot-3d/learn/
 [x] 33: Setting Up the Scene
 [x] 34: Introducing the Gridmap
 [x] 35: Using the Gridmap
-[ ] 36: Building Curves With Path3D
+[x] 36: Building Curves With Path3D
 [ ] 37: PathFollow3D Enemies
 [ ] 38: Making a Base
 [ ] 39: Health and Labels
