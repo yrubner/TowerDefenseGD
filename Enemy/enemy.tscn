@@ -14,3 +14,10 @@ script = ExtResource("1_lvwys")
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 3.55271e-15, 0, 1, 0, -3.55271e-15, 0, 1, 0, 1.5, 0)
 mesh = SubResource("CapsuleMesh_g8oem")
+
+[node name="EntityNameLabel" type="Label3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 0)
+billboard = 1
+text = "starting name"
+font_size = 300
+outline_size = 50
