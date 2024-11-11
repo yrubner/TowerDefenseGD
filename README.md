@@ -11,7 +11,7 @@ https://www.udemy.com/course/complete-godot-3d/learn/
 [x] 35: Using the Gridmap
 [x] 36: Building Curves With Path3D
 [x] 37: PathFollow3D Enemies
-[ ] 38: Making a Base
+[x] 38: Making a Base
 [ ] 39: Health and Labels
 [ ] 40: Introducing Properties
 [ ] 41: Text, Strings and Colors
