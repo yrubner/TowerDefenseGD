@@ -21,7 +21,7 @@ https://www.udemy.com/course/complete-godot-3d/learn/
 [x] 45: Building Towers
 [x] 46: Picking Turret Positions
 [x] 47: Making Projectiles
-[ ] 48: Introducing Timers
+[x] 48: Introducing Timers
 [ ] 49: Aiming the Turrets
 [ ] 50: Damaging Enemies
 [ ] 51: For Loops and Targetting
