@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://bce5kslpisvml"]
+[gd_scene load_steps=8 format=3 uid="uid://bce5kslpisvml"]
 
 [ext_resource type="Script" path="res://Enemy/enemy.gd" id="1_lvwys"]
 
@@ -6,9 +6,50 @@
 radius = 1.0
 height = 3.0
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gd5lo"]
+no_depth_test = true
+shading_mode = 0
+
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_vha1f"]
 radius = 1.0
 height = 3.0
+
+[sub_resource type="Animation" id="Animation_73ls5"]
+resource_name = "TakeDamage"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("DamageHighlight:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="Animation" id="Animation_2erff"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("DamageHighlight:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_g6kbt"]
+_data = {
+"RESET": SubResource("Animation_2erff"),
+"TakeDamage": SubResource("Animation_73ls5")
+}
 
 [node name="Enemy" type="PathFollow3D"]
 transform = Transform3D(0.999987, 0, 0, 0, 1, 0, 0, 0, 0.999987, 0, 0, 0)
@@ -17,6 +58,12 @@ script = ExtResource("1_lvwys")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 3.55271e-15, 0, 1, 0, -3.55271e-15, 0, 1, 0, 1.5, 0)
+mesh = SubResource("CapsuleMesh_g8oem")
+
+[node name="DamageHighlight" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 3.55271e-15, 0, 1, 0, -3.55271e-15, 0, 1, 0, 1.5, 0)
+visible = false
+material_override = SubResource("StandardMaterial3D_gd5lo")
 mesh = SubResource("CapsuleMesh_g8oem")
 
 [node name="EntityNameLabel" type="Label3D" parent="."]
@@ -31,3 +78,8 @@ outline_size = 50
 [node name="CollisionShape3D" type="CollisionShape3D" parent="EnemyArea3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
 shape = SubResource("CapsuleShape3D_vha1f")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_g6kbt")
+}
