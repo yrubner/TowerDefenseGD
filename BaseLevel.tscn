@@ -42,7 +42,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
 material_override = SubResource("StandardMaterial3D_8u0ga")
 size = Vector3(100, 2, 100)
 
-[node name="RayPickerCamera" parent="." instance=ExtResource("1_k8ky8")]
+[node name="RayPickerCamera" parent="." node_paths=PackedStringArray("gridmap") instance=ExtResource("1_k8ky8")]
+gridmap = NodePath("../GridMap")
 
 [node name="GridMap" type="GridMap" parent="."]
 mesh_library = ExtResource("1_mp854")
