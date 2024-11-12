@@ -23,7 +23,7 @@ https://www.udemy.com/course/complete-godot-3d/learn/
 [x] 47: Making Projectiles
 [x] 48: Introducing Timers
 [x] 49: Aiming the Turrets
-[ ] 50: Damaging Enemies
+[x] 50: Damaging Enemies
 [ ] 51: For Loops and Targetting
 [ ] 52: Introducing Animations
 [ ] 53: Instantiating Enemies
