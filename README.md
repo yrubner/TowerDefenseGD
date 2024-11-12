@@ -15,7 +15,7 @@ https://www.udemy.com/course/complete-godot-3d/learn/
 [x] 39: Health and Labels
 [x] 40: Introducing Properties
 [x] 41: Text, Strings and Colors
-[ ] 42: Mouse Input and Ray Picking
+[x] 42: Mouse Input and Ray Picking
 [ ] 43: Updating Gridmap Cells
 [ ] 44: Clicks and Cursors
 [ ] 45: Building Towers
