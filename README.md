@@ -26,7 +26,7 @@ https://www.udemy.com/course/complete-godot-3d/learn/
 [x] 50: Damaging Enemies
 [x] 51: For Loops and Targetting
 [x] 52: Introducing Animations
-[ ] 53: Instantiating Enemies
+[x] 53: Instantiating Enemies
 [ ] 54: Control Nodes and UI
 [ ] 55: Earning and Spending Gold
 [ ] 56: Difficulty Curves
