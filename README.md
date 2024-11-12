@@ -20,7 +20,7 @@ https://www.udemy.com/course/complete-godot-3d/learn/
 [x] 44: Clicks and Cursors
 [x] 45: Building Towers
 [x] 46: Picking Turret Positions
-[ ] 47: Making Projectiles
+[x] 47: Making Projectiles
 [ ] 48: Introducing Timers
 [ ] 49: Aiming the Turrets
 [ ] 50: Damaging Enemies
