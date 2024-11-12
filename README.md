@@ -18,7 +18,7 @@ https://www.udemy.com/course/complete-godot-3d/learn/
 [x] 42: Mouse Input and Ray Picking
 [x] 43: Updating Gridmap Cells
 [x] 44: Clicks and Cursors
-[ ] 45: Building Towers
+[x] 45: Building Towers
 [ ] 46: Picking Turret Positions
 [ ] 47: Making Projectiles
 [ ] 48: Introducing Timers
