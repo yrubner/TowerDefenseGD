@@ -17,7 +17,7 @@ https://www.udemy.com/course/complete-godot-3d/learn/
 [x] 41: Text, Strings and Colors
 [x] 42: Mouse Input and Ray Picking
 [x] 43: Updating Gridmap Cells
-[ ] 44: Clicks and Cursors
+[x] 44: Clicks and Cursors
 [ ] 45: Building Towers
 [ ] 46: Picking Turret Positions
 [ ] 47: Making Projectiles
