@@ -28,7 +28,7 @@ https://www.udemy.com/course/complete-godot-3d/learn/
 [x] 52: Introducing Animations
 [x] 53: Instantiating Enemies
 [x] 54: Control Nodes and UI
-[ ] 55: Earning and Spending Gold
+[x] 55: Earning and Spending Gold
 [ ] 56: Difficulty Curves
 [ ] 57: Scaling Enemy Health
 [ ] 58: Ending the Game

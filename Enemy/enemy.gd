@@ -4,6 +4,7 @@ extends PathFollow3D
 
 @export var speed: float = 2.5
 @export var max_health: int = 50
+@export var gold_value: int = 15
 
 var current_health: int:
 	set(health_in):
@@ -14,10 +15,12 @@ var current_health: int:
 		entity_name_label.text = str(current_health) + "/" + str(max_health)
 		entity_name_label.modulate = Color.RED.lerp(Color.GREEN, float(current_health) / float(max_health))
 		if current_health < 1:
+			bank.gold += gold_value
 			queue_free()
 			
 @onready var base = get_tree().get_first_node_in_group("base")
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
+@onready var bank = get_tree().get_first_node_in_group("bank")
 
 
 func _ready() -> void:
