@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://drjg6lh8nskg8"]
+[gd_scene load_steps=16 format=3 uid="uid://drjg6lh8nskg8"]
 
 [ext_resource type="PackedScene" uid="uid://cpewdc0wtwg6g" path="res://RayPickerCamera/ray_picker_camera.tscn" id="1_k8ky8"]
 [ext_resource type="MeshLibrary" uid="uid://xjhekfl8wt5k" path="res://MeshLibraries/SpaceLibrary.tres" id="1_mp854"]
@@ -8,6 +8,7 @@
 [ext_resource type="Script" path="res://turret_manager.gd" id="5_3nbo5"]
 [ext_resource type="PackedScene" uid="uid://h3fs7wuld2x8" path="res://Turret/turret.tscn" id="6_warkl"]
 [ext_resource type="Script" path="res://bank.gd" id="8_eurgd"]
+[ext_resource type="PackedScene" uid="uid://dfe27q3ijiqt3" path="res://DifficultyManager/difficulty_manager.tscn" id="9_sthab"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ipueh"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -63,10 +64,11 @@ data = {
 "cells": PackedInt32Array(65535, 65534, 0, 65535, 2, 0, 65531, 65535, 0, 65531, 65534, 0, 65531, 0, 0, 65531, 2, 0, 65532, 2, 0, 65533, 2, 0, 65534, 2, 0, 0, 65534, 0, 0, 2, 0, 1, 65534, 0, 1, 2, 0, 2, 65534, 0, 2, 2, 0, 3, 65534, 0, 3, 2, 0, 4, 2, 0, 65533, 1, 0, 65533, 0, 0, 65533, 65535, 0, 65535, 65535, 0, 65535, 0, 0, 1, 1, 0, 1, 0, 0, 3, 65535, 0, 3, 0, 0)
 }
 
-[node name="EnemyPath" type="Path3D" parent="."]
+[node name="EnemyPath" type="Path3D" parent="." node_paths=PackedStringArray("difficulty_manager")]
 curve = SubResource("Curve3D_piqty")
 script = ExtResource("3_ya2ps")
 enemy_scene = ExtResource("2_605k1")
+difficulty_manager = NodePath("../DifficultyManager")
 
 [node name="Road" type="CSGPolygon3D" parent="EnemyPath"]
 polygon = PackedVector2Array(-1, 0, -1, 0.1, 1, 0.1, 1, 0)
@@ -137,5 +139,7 @@ size_flags_horizontal = 0
 size_flags_vertical = 8
 text = "placeholder"
 label_settings = SubResource("LabelSettings_27nfg")
+
+[node name="DifficultyManager" parent="." instance=ExtResource("9_sthab")]
 
 [connection signal="timeout" from="EnemyPath/Timer" to="EnemyPath" method="spawn_enemy"]
