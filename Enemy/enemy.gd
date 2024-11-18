@@ -11,7 +11,6 @@ var current_health: int:
 		if health_in < current_health:
 			animation_player.play("TakeDamage")
 		current_health = health_in
-		print("enemy health was changed")
 		entity_name_label.text = str(current_health) + "/" + str(max_health)
 		entity_name_label.modulate = Color.RED.lerp(Color.GREEN, float(current_health) / float(max_health))
 		if current_health < 1:
@@ -32,4 +31,5 @@ func _process(delta: float) -> void:
 	if progress_ratio == 1.0:
 		base.take_damage()
 		set_process(false)
+		queue_free()
 		

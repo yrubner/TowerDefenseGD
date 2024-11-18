@@ -30,7 +30,7 @@ https://www.udemy.com/course/complete-godot-3d/learn/
 [x] 54: Control Nodes and UI
 [x] 55: Earning and Spending Gold
 [x] 56: Difficulty Curves
-[ ] 57: Scaling Enemy Health
+[x] 57: Scaling Enemy Health
 [ ] 58: Ending the Game
 [ ] 59: The Victory Screen
 [ ] 60: Rewarding the Player

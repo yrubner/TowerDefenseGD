@@ -114,6 +114,7 @@ wait_time = 2.0
 autostart = true
 
 [node name="Base" parent="." instance=ExtResource("3_j52uw")]
+max_health = 50
 
 [node name="TurretManager" type="Node3D" parent="." node_paths=PackedStringArray("enemy_path")]
 script = ExtResource("5_3nbo5")
@@ -143,3 +144,4 @@ label_settings = SubResource("LabelSettings_27nfg")
 [node name="DifficultyManager" parent="." instance=ExtResource("9_sthab")]
 
 [connection signal="timeout" from="EnemyPath/Timer" to="EnemyPath" method="spawn_enemy"]
+[connection signal="stop_spawning_enemies" from="DifficultyManager" to="EnemyPath" method="_on_difficulty_manager_stop_spawning_enemies"]
