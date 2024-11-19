@@ -35,7 +35,7 @@ https://www.udemy.com/course/complete-godot-3d/learn/
 [x] 59: The Victory Screen
 [x] 60: Rewarding the Player
 [x] 61: Using GLTF Files
-[ ] 62: Updating the MeshLibrary
+[x] 62: Updating the MeshLibrary
 [ ] 63: Barbarians and Animations
 [ ] 64: Polish and Balance
 [ ] 65: Wrap-Up - Barbarian Blaster
