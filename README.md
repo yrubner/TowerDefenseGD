@@ -33,7 +33,7 @@ https://www.udemy.com/course/complete-godot-3d/learn/
 [x] 57: Scaling Enemy Health
 [x] 58: Ending the Game
 [x] 59: The Victory Screen
-[ ] 60: Rewarding the Player
+[x] 60: Rewarding the Player
 [ ] 61: Using GLTF Files
 [ ] 62: Updating the MeshLibrary
 [ ] 63: Barbarians and Animations
