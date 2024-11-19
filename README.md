@@ -38,4 +38,4 @@ https://www.udemy.com/course/complete-godot-3d/learn/
 [x] 62: Updating the MeshLibrary
 [x] 63: Barbarians and Animations
 [x] 64: Polish and Balance
-[ ] 65: Wrap-Up - Barbarian Blaster
+[x] 65: Wrap-Up - Barbarian Blaster
