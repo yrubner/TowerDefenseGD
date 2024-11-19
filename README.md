@@ -34,7 +34,7 @@ https://www.udemy.com/course/complete-godot-3d/learn/
 [x] 58: Ending the Game
 [x] 59: The Victory Screen
 [x] 60: Rewarding the Player
-[ ] 61: Using GLTF Files
+[x] 61: Using GLTF Files
 [ ] 62: Updating the MeshLibrary
 [ ] 63: Barbarians and Animations
 [ ] 64: Polish and Balance
