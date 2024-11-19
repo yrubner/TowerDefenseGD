@@ -31,7 +31,7 @@ https://www.udemy.com/course/complete-godot-3d/learn/
 [x] 55: Earning and Spending Gold
 [x] 56: Difficulty Curves
 [x] 57: Scaling Enemy Health
-[ ] 58: Ending the Game
+[x] 58: Ending the Game
 [ ] 59: The Victory Screen
 [ ] 60: Rewarding the Player
 [ ] 61: Using GLTF Files
