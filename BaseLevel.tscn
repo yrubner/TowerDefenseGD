@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://drjg6lh8nskg8"]
+[gd_scene load_steps=20 format=3 uid="uid://drjg6lh8nskg8"]
 
 [ext_resource type="PackedScene" uid="uid://cpewdc0wtwg6g" path="res://RayPickerCamera/ray_picker_camera.tscn" id="1_k8ky8"]
 [ext_resource type="MeshLibrary" uid="uid://xjhekfl8wt5k" path="res://MeshLibraries/SpaceLibrary.tres" id="1_mp854"]
@@ -7,6 +7,7 @@
 [ext_resource type="Script" path="res://enemy_path.gd" id="3_ya2ps"]
 [ext_resource type="Script" path="res://turret_manager.gd" id="5_3nbo5"]
 [ext_resource type="PackedScene" uid="uid://h3fs7wuld2x8" path="res://Turret/turret.tscn" id="6_warkl"]
+[ext_resource type="FontFile" uid="uid://0ejul2k3f2ij" path="res://Assets/Asap/static/Asap-Bold.ttf" id="8_2irhs"]
 [ext_resource type="Script" path="res://bank.gd" id="8_eurgd"]
 [ext_resource type="PackedScene" uid="uid://dfe27q3ijiqt3" path="res://DifficultyManager/difficulty_manager.tscn" id="9_sthab"]
 [ext_resource type="PackedScene" uid="uid://bkcmd0rou872a" path="res://UserInterface/victory_layer.tscn" id="10_vjbme"]
@@ -36,6 +37,9 @@ point_count = 11
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_boeey"]
 albedo_color = Color(0.341584, 0.341584, 0.341584, 1)
+
+[sub_resource type="Theme" id="Theme_twgrt"]
+default_font = ExtResource("8_2irhs")
 
 [sub_resource type="LabelSettings" id="LabelSettings_27nfg"]
 font_size = 64
@@ -121,7 +125,6 @@ wait_time = 2.0
 autostart = true
 
 [node name="Base" parent="." instance=ExtResource("3_j52uw")]
-max_health = 50
 
 [node name="TurretManager" type="Node3D" parent="." node_paths=PackedStringArray("enemy_path")]
 script = ExtResource("5_3nbo5")
@@ -135,6 +138,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
+theme = SubResource("Theme_twgrt")
 theme_override_constants/margin_left = 16
 theme_override_constants/margin_top = 16
 theme_override_constants/margin_right = 16
@@ -147,8 +151,10 @@ size_flags_horizontal = 0
 size_flags_vertical = 8
 text = "placeholder"
 label_settings = SubResource("LabelSettings_27nfg")
+uppercase = true
 
 [node name="DifficultyManager" parent="." instance=ExtResource("9_sthab")]
+game_length = 180.0
 
 [node name="VictoryLayer" parent="." instance=ExtResource("10_vjbme")]
 visible = false

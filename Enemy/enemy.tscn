@@ -1,7 +1,8 @@
-[gd_scene load_steps=10 format=4 uid="uid://bce5kslpisvml"]
+[gd_scene load_steps=11 format=4 uid="uid://bce5kslpisvml"]
 
 [ext_resource type="Script" path="res://Enemy/enemy.gd" id="1_lvwys"]
 [ext_resource type="PackedScene" uid="uid://bt0qx468goyey" path="res://Assets/Barbarian.glb" id="2_i58d4"]
+[ext_resource type="FontFile" uid="uid://0ejul2k3f2ij" path="res://Assets/Asap/static/Asap-Bold.ttf" id="2_x8mmq"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_vha1f"]
 radius = 1.0
@@ -132,6 +133,7 @@ speed = 5.0
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
 billboard = 1
 text = "starting name"
+font = ExtResource("2_x8mmq")
 font_size = 150
 outline_size = 30
 

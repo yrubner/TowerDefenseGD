@@ -13,6 +13,7 @@ material = SubResource("StandardMaterial3D_f8ec4")
 [node name="Projectile" type="Area3D"]
 top_level = true
 script = ExtResource("1_cgq1t")
+damage = 30.0
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 mesh = SubResource("SphereMesh_ptyx0")

@@ -12,7 +12,6 @@ signal stop_spawning_enemies
 func _ready() -> void:
 	timer.start(game_length)
 
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass

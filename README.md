@@ -37,5 +37,5 @@ https://www.udemy.com/course/complete-godot-3d/learn/
 [x] 61: Using GLTF Files
 [x] 62: Updating the MeshLibrary
 [x] 63: Barbarians and Animations
-[ ] 64: Polish and Balance
+[x] 64: Polish and Balance
 [ ] 65: Wrap-Up - Barbarian Blaster
