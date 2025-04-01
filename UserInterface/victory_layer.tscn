@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://bkcmd0rou872a"]
 
-[ext_resource type="Script" path="res://UserInterface/victory_layer.gd" id="1_7fuit"]
+[ext_resource type="Script" uid="uid://bgpjqixl17jlu" path="res://UserInterface/victory_layer.gd" id="1_7fuit"]
 [ext_resource type="FontFile" uid="uid://0ejul2k3f2ij" path="res://Assets/Asap/static/Asap-Bold.ttf" id="2_3dnru"]
 [ext_resource type="Texture2D" uid="uid://w3fswpms1cow" path="res://Assets/star.png" id="2_t0kgb"]
 

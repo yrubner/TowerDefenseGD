@@ -1,16 +1,14 @@
 [gd_scene load_steps=4 format=3 uid="uid://dfe27q3ijiqt3"]
 
-[ext_resource type="Script" path="res://DifficultyManager/difficulty_manager.gd" id="1_jc8yi"]
+[ext_resource type="Script" uid="uid://bom0tk7toqft4" path="res://DifficultyManager/difficulty_manager.gd" id="1_jc8yi"]
 
 [sub_resource type="Curve" id="Curve_8gbkx"]
-min_value = 0.25
-max_value = 3.0
+_limits = [0.25, 3.0, 0.0, 1.0]
 _data = [Vector2(0, 3), 0.0, 0.0525499, 0, 0, Vector2(1, 0.25), -8.39014, 0.0, 0, 0]
 point_count = 2
 
 [sub_resource type="Curve" id="Curve_2jymx"]
-min_value = 10.0
-max_value = 150.0
+_limits = [0.99, 150.0, 0.0, 1.0]
 _data = [Vector2(0, 40.2175), 0.0, 109.783, 0, 1, Vector2(1, 150), 109.783, 0.0, 1, 0]
 point_count = 2
 

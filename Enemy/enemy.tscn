@@ -1,6 +1,6 @@
 [gd_scene load_steps=11 format=4 uid="uid://bce5kslpisvml"]
 
-[ext_resource type="Script" path="res://Enemy/enemy.gd" id="1_lvwys"]
+[ext_resource type="Script" uid="uid://dho7g2helv43u" path="res://Enemy/enemy.gd" id="1_lvwys"]
 [ext_resource type="PackedScene" uid="uid://bt0qx468goyey" path="res://Assets/Barbarian.glb" id="2_i58d4"]
 [ext_resource type="FontFile" uid="uid://0ejul2k3f2ij" path="res://Assets/Asap/static/Asap-Bold.ttf" id="2_x8mmq"]
 
@@ -41,8 +41,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_g6kbt"]
 _data = {
-"RESET": SubResource("Animation_2erff"),
-"TakeDamage": SubResource("Animation_73ls5")
+&"RESET": SubResource("Animation_2erff"),
+&"TakeDamage": SubResource("Animation_73ls5")
 }
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gd5lo"]

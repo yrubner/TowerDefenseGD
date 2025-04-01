@@ -4,11 +4,11 @@
 [ext_resource type="MeshLibrary" uid="uid://xjhekfl8wt5k" path="res://MeshLibraries/SpaceLibrary.tres" id="1_mp854"]
 [ext_resource type="PackedScene" uid="uid://bce5kslpisvml" path="res://Enemy/enemy.tscn" id="2_605k1"]
 [ext_resource type="PackedScene" uid="uid://cdcitn75ae8d" path="res://Base/base.tscn" id="3_j52uw"]
-[ext_resource type="Script" path="res://enemy_path.gd" id="3_ya2ps"]
-[ext_resource type="Script" path="res://turret_manager.gd" id="5_3nbo5"]
+[ext_resource type="Script" uid="uid://cbx5nb1bkyvpr" path="res://enemy_path.gd" id="3_ya2ps"]
+[ext_resource type="Script" uid="uid://ghn7pme3o5qa" path="res://turret_manager.gd" id="5_3nbo5"]
 [ext_resource type="PackedScene" uid="uid://h3fs7wuld2x8" path="res://Turret/turret.tscn" id="6_warkl"]
 [ext_resource type="FontFile" uid="uid://0ejul2k3f2ij" path="res://Assets/Asap/static/Asap-Bold.ttf" id="8_2irhs"]
-[ext_resource type="Script" path="res://bank.gd" id="8_eurgd"]
+[ext_resource type="Script" uid="uid://c8dx3xdxglgic" path="res://bank.gd" id="8_eurgd"]
 [ext_resource type="PackedScene" uid="uid://dfe27q3ijiqt3" path="res://DifficultyManager/difficulty_manager.tscn" id="9_sthab"]
 [ext_resource type="PackedScene" uid="uid://bkcmd0rou872a" path="res://UserInterface/victory_layer.tscn" id="10_vjbme"]
 
@@ -88,6 +88,7 @@ path_interval_type = 0
 path_interval = 0.5
 path_simplify_angle = 0.0
 path_rotation = 2
+path_rotation_accurate = false
 path_local = true
 path_continuous_u = true
 path_u_distance = 1.0
@@ -102,6 +103,7 @@ path_interval_type = 0
 path_interval = 0.5
 path_simplify_angle = 0.0
 path_rotation = 2
+path_rotation_accurate = false
 path_local = true
 path_continuous_u = true
 path_u_distance = 1.0
@@ -115,6 +117,7 @@ path_interval_type = 0
 path_interval = 0.5
 path_simplify_angle = 0.0
 path_rotation = 2
+path_rotation_accurate = false
 path_local = true
 path_continuous_u = true
 path_u_distance = 1.0

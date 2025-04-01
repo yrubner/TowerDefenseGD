@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://h3fs7wuld2x8"]
 
-[ext_resource type="Script" path="res://Turret/turret.gd" id="1_gndoa"]
+[ext_resource type="Script" uid="uid://dkry162x1fj3p" path="res://Turret/turret.gd" id="1_gndoa"]
 [ext_resource type="PackedScene" uid="uid://d3hry6hhl6d4h" path="res://Turret/projectile.tscn" id="1_u70d4"]
 [ext_resource type="PackedScene" uid="uid://bgorg0g0t7ptu" path="res://Assets/Cannon.glb" id="3_ljqjc"]
 [ext_resource type="PackedScene" uid="uid://bk187woqsx547" path="res://Assets/TurretBase.glb" id="4_s0aui"]
@@ -37,8 +37,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_bc73v"]
 _data = {
-"FireTurret": SubResource("Animation_exb6g"),
-"RESET": SubResource("Animation_4bpcv")
+&"FireTurret": SubResource("Animation_exb6g"),
+&"RESET": SubResource("Animation_4bpcv")
 }
 
 [node name="Turret" type="Node3D"]
